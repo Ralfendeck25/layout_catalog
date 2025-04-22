@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,6 +23,110 @@
   </head>
 
   <body>
-    <h1>Catalog</h1>
+    <header class="header">
+      <a
+        href="/"
+        class="header__logo"
+      >
+        <img
+          src="./images/logo.png"
+          alt="Company Logo"
+          class="header__logo-image"
+        />
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link is-active"
+            >
+              Apple
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+            >
+              Mac
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+            >
+              iPad
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+              data-qa="nav-hover"
+            >
+              Laptops - computers
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="header__toggle"
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
+    </header>
+
+    <main class="catalog">
+      <article
+        class="card"
+        data-qa="card"
+      >
+        <img
+          src="./images/imac.jpeg"
+          alt="Apple iMac"
+          class="card__image"
+        />
+        <div class="card__stars">
+          <img
+            src="./images/star-active.svg"
+            alt="Estrela ativa"
+            class="star"
+          />
+          <img
+            src="./images/star-active.svg"
+            alt="Estrela ativa"
+            class="star"
+          />
+          <img
+            src="./images/star-active.svg"
+            alt="Estrela ativa"
+            class="star"
+          />
+          <img
+            src="./images/star.svg"
+            alt="Estrela inativa"
+            class="star"
+          />
+          <img
+            src="./images/star.svg"
+            alt="Estrela inativa"
+            class="star"
+          />
+        </div>
+        <h3 class="card__title">Apple iMac</h3>
+        <a
+          href="#"
+          class="card__buy"
+          data-qa="card-hover"
+        >
+          Buy
+        </a>
+      </article>
+    </main>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
