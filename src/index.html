@@ -22,7 +22,6 @@
   </head>
 
   <body>
-    <h1>Catalog</h1>
     <header class="header">
       <a
         href="/"
@@ -30,7 +29,7 @@
       >
         <img
           src="./images/logo.png"
-          alt="Catalog Logo"
+          alt="Company Logo"
           class="header__logo-image"
         />
       </a>
@@ -66,11 +65,17 @@
               class="nav__link"
               data-qa="nav-hover"
             >
-              Laptops and computers
+              Laptops - computers
             </a>
           </li>
         </ul>
       </nav>
+      <button
+        class="header__toggle"
+        aria-label="Toggle navigation"
+      >
+        ☰
+      </button>
     </header>
 
     <main class="catalog">
@@ -80,46 +85,47 @@
       >
         <img
           src="./images/imac.jpeg"
-          alt="iMac"
+          alt="Apple iMac"
           class="card__image"
         />
         <div class="card__stars">
           <img
             src="./images/star-active.svg"
-            alt="estrela preenchida"
+            alt="Estrela ativa"
             class="star"
           />
           <img
             src="./images/star-active.svg"
-            alt="estrela preenchida"
+            alt="Estrela ativa"
             class="star"
           />
           <img
             src="./images/star-active.svg"
-            alt="estrela preenchida"
+            alt="Estrela ativa"
             class="star"
           />
           <img
             src="./images/star.svg"
-            alt="estrela vazia"
+            alt="Estrela inativa"
             class="star"
           />
           <img
             src="./images/star.svg"
-            alt="estrela vazia"
+            alt="Estrela inativa"
             class="star"
           />
         </div>
         <h3 class="card__title">Apple iMac</h3>
         <a
           href="#"
-          class="card__button"
+          class="card__buy"
           data-qa="card-hover"
         >
           Buy
         </a>
       </article>
     </main>
-    <script src="scripts/main.js"></script>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
